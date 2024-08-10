@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/l2fi?verifyServerCertificate=false&useSSL=false&requireSSL=false&autoReconnect=true&characterEncoding=utf8&characterSetResults=utf8&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&zeroDateTimeBehavior=convertToNull
+    username: test
+    password: test
+
+ordinal:
+  address: tb1pzxmvax02krvgw0tc06v7dz34zdvz9zynehcsfxky32h9zwg4nz4s9hk76h
+  api: https://wallet-api-testnet.unisat.io/v5/address/inscriptions
+
+token:
+  api: https://wallet-api-testnet.unisat.io/v5/address/inscriptions
