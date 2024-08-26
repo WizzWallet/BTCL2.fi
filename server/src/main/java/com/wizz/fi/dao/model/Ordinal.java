@@ -11,13 +11,22 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class Ordinal extends BaseModel {
     @TableField("inscription_number")
-    private String inscriptionNumber;
+    private Integer inscriptionNumber;
 
     @TableField("inscription_id")
     private String inscriptionId;
 
     @TableField("content")
     private String content;
+
+    @TableField("utxo_txid")
+    private String utxoTxid;
+
+    @TableField("utxo_vout")
+    private Integer utxoVout;
+
+    @TableField("utxo_value")
+    private Long utxoValue;
 
     @TableField("status")
     private OrdinalStatus status;

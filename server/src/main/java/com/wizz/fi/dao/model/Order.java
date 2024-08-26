@@ -11,10 +11,6 @@ import lombok.experimental.Accessors;
 @TableName("orders")
 @Accessors(chain = true)
 public class Order extends BaseModel {
-
-    @TableField("user_id")
-    private Long userId;
-
     @TableField(value = "number")
     private String number;
 
@@ -38,4 +34,7 @@ public class Order extends BaseModel {
 
     @TableField(value = "status")
     private OrderStatus status;
+
+    @TableField(value = "broadcast_result")
+    private String broadcastResult;
 }

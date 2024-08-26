@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: local #默认为开发环境
+    active: test3 #默认为开发环境
   servlet:
     multipart:
       enabled: true #开启文件上传
@@ -35,9 +35,22 @@ mybatis-plus:
     default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
   type-enums-package: com.wizz.fi.dao.enums
 
-jwt:
-  tokenHeader: Authorization #JWT存储的请求头
-  secret: 123456 #JWT加解密使用的密钥
-  expiration: 86400 #JWT的超期限时间(60*60*24)
-  tokenHead: 'Bearer '  #JWT负载中拿到开头
-  signatureAlgorithm: HS256
+ordinal:
+  address: "tb1q0dqj90dc3ru5axedmusaxw3ewz3r0j0vxfg6yv"
+  api: "https://wallet-api-testnet.unisat.io/v5/address/inscriptions"
+
+
+token:
+  rpc: "https://ethereumplus.pwrlabs.io/"
+  contractAddress: "0x766e9686048E9f3Fcbef19A2fecde87ea4F57Aff"
+  address: "0x000000000000000000000000af7732604e514548add15a5ea546310116df7bfb"
+  privateKey: "privateKey"
+
+wallet:
+  mnemonic: "mnemonic"
+  ordinal_path: "M/84H/0H/0H/0/0"
+  change_path: "M/84H/0H/0H/0/0"
+  change_address: "tb1q0dqj90dc3ru5axedmusaxw3ewz3r0j0vxfg6yv"
+
+mempool:
+  host: "https://mempool.space/testnet/api"

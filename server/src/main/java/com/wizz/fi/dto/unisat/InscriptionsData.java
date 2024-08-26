@@ -23,5 +23,6 @@ public class InscriptionsData {
         private Integer offset;
         private Integer utxoHeight;
         private Integer utxoConfirmation;
+        private Long outputValue;
     }
 }

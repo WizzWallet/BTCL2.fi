@@ -14,17 +14,19 @@ import java.util.concurrent.TimeUnit;
 public class AppConfig {
     @Bean
     public OkHttpClient okHttpClient() {
-        OkHttpClient okHttpClient = new OkHttpClient().newBuilder()
-                .connectionPool(new ConnectionPool(60, 30, TimeUnit.MINUTES))
-                .readTimeout(30, TimeUnit.SECONDS)
-                .writeTimeout(30, TimeUnit.SECONDS)
-                .callTimeout(30, TimeUnit.SECONDS)
-                .connectTimeout(30, TimeUnit.SECONDS)
-                .build();
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        builder.readTimeout(30, TimeUnit.SECONDS);
+        //自定义连接池最大空闲连接数和等待时长，默认最大5个空闲连接
+        builder.connectionPool(new ConnectionPool(32, 5, TimeUnit.MILLISECONDS));
 
-        okHttpClient.dispatcher().setMaxRequestsPerHost(100);
-        okHttpClient.dispatcher().setMaxRequests(200);
-        return okHttpClient;
+        // 代理服务器的地址和端口
+//        String proxyHost = "127.0.0.1";
+//        int proxyPort = 7890;
+//
+//        Proxy proxy = new Proxy(Proxy.Type.SOCKS, new InetSocketAddress(proxyHost, proxyPort));
+//        builder.proxy(proxy);
+
+        return builder.build();
     }
 
     @Bean

@@ -23,4 +23,6 @@ public class OrderVO {
     private String outputTxid;
 
     private OrderStatus status;
+
+    private String broadcastResult;
 }

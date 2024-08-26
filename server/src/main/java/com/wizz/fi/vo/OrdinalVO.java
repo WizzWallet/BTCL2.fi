@@ -7,7 +7,7 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 public class OrdinalVO {
-    private String inscriptionNumber;
+    private Integer inscriptionNumber;
 
     private String inscriptionId;
 

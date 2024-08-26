@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.util.List;
 
 @Service
 @Slf4j
@@ -21,14 +20,12 @@ public class UnisatService {
     @Autowired
     private OkHttpClient okHttpClient;
 
-    @Value("${ordinal.address}")
-    private String address;
-
     @Value("${ordinal.api}")
     private String api;
 
-    public List<InscriptionsData.Inscription> list() {
-        String url = String.format("%s?cursor=0&size=100&address=%s", api, address);
+    public InscriptionsData list(String address, int cursor) {
+        String url = String.format("%s?cursor=%s&size=100&address=%s", api, cursor, address);
+        log.info("list: {}", url);
 
         Request request = new Request.Builder()
                 .url(url)
@@ -44,7 +41,7 @@ public class UnisatService {
             UnisatResponse<InscriptionsData> response1 = new Gson().fromJson(body, new TypeToken<UnisatResponse<InscriptionsData>>() {
             }.getType());
             if (response1.getCode() == 0) {
-                return response1.getData().getList();
+                return response1.getData();
             } else {
                 return null;
             }

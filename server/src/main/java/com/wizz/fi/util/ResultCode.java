@@ -11,22 +11,14 @@ public enum ResultCode implements IErrorCode {
     FORBIDDEN(403, "forbidden"),
 
     PARAMETER_ERROR(990000, "invalid parameter"),
-    NETWORK_ERROR(990001, "network error, please try again later"),
 
-    S3_UPLOAD_ERROR(9001, "File Upload Error, please retry"),
-
-    JOB_NOT_FOUND(1001, "Job not founded"),
-
-    WORKER_IS_DISABLE(4001, "Worker is disabled"),
-    JOB_DIFFICULT_ERROR(4002, "job difficulty must between 4 to 9"),
-
-    JOB_SCHEDULE_DATA_ERROR(4004, "invalid parameter"),
-
-    NO_MORE_COUPON(4005, "Sorry, all coupons have been claimed."),
-
-    STAKE_WRONG_AMOUNT(4006, "invalid stake amount"),
-
-    STAKE_WRONG_RULE(4006, "invalid stake period"),
+    ORDER_NOT_FOUND(10001, "order not found"),
+    ORDER_STATUS_INCORRECT(10002, "order status incorrect"),
+    STAKE_TOKEN_AMOUNT_NOT_ENOUGH(10003, "stake token amount not enough"),
+    ORDINAL_NOT_FOUND(10004, "ordinal not found"),
+    ORDINAL_STATUS_INCORRECT(10006, "ordinal status incorrect"),
+    ORDER_ORDINAL_NOT_FOUND(10005, "order ordinal not found"),
+    ORDER_ORDINAL_STATUS_INCORRECT(10006, "order ordinal status incorrect"),
     ;
 
 
