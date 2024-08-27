@@ -165,6 +165,9 @@ public class StakeService extends ServiceImpl<OrderMapper, Order> {
         // 假定只需要使用一个utxo作为gas，也只有一个找零
         int fee = (1 + prevouts.size()) * 68 + (1 + outputs.size()) * 31 + 11;
         int rate = mempoolService.getRecommendedFee().getHourFee();
+        if (rate < 5) {
+            rate = 5;
+        }
         int gas = fee * rate;
 
         String lockKey = "utxo_payment";
