@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1291px" height="1291px" viewBox="0 0 1291 1291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="26" height="26" rx="13"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="76.0362413%" id="linearGradient-3">
+            <stop stop-color="#EBC28E" offset="0%"></stop>
+            <stop stop-color="#3E4553" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="36" height="36" rx="18"></rect>
+        <rect id="path-6" x="0" y="0" width="18" height="18" rx="9"></rect>
+        <rect id="path-8" x="0" y="0" width="10" height="10" rx="5"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bitcoin-TitleFi" transform="translate(-75.000000, 200.000000)">
+            <g id="编组" transform="translate(76.000000, -199.000000)">
+                <circle id="椭圆形" stroke="#3E4553" fill-rule="nonzero" cx="644.5" cy="644.5" r="206.5"></circle>
+                <circle id="椭圆形" stroke="#3E4553" opacity="0.697591146" fill-rule="nonzero" cx="644.5" cy="644.5" r="325.5"></circle>
+                <circle id="椭圆形" stroke="#3E4553" opacity="0.802129836" fill-rule="nonzero" cx="644.5" cy="644.5" r="437.5"></circle>
+                <circle id="椭圆形" stroke="#3E4553" opacity="0.500302269" fill-rule="nonzero" cx="644.5" cy="644.5" r="644.5"></circle>
+                <g id="截屏2024-08-09-04.23.26备份" transform="translate(332.000000, 507.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="蒙版" fill="#3E4553" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+                <g id="截屏2024-08-09-04.23.26备份-2" transform="translate(438.000000, 709.000000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="蒙版" fill="url(#linearGradient-3)" fill-rule="nonzero" xlink:href="#path-4"></use>
+                </g>
+                <g id="截屏2024-08-09-04.23.26备份-3" transform="translate(893.000000, 281.000000)">
+                    <mask id="mask-7" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <use id="蒙版" fill="#3E4553" fill-rule="nonzero" xlink:href="#path-6"></use>
+                </g>
+                <g id="截屏2024-08-09-04.23.26备份-5" transform="translate(83.000000, 880.000000)">
+                    <mask id="mask-9" fill="white">
+                        <use xlink:href="#path-8"></use>
+                    </mask>
+                    <use id="蒙版" fill="#3E4553" fill-rule="nonzero" xlink:href="#path-8"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
